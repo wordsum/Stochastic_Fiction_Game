@@ -9,6 +9,7 @@
 # >3. Write the story.
 # >4. Editing may help it be a story.
 
+### E X A M P L E 
 ### Story Elements:
 # - Theme: God
 # - Setting Time: Future
@@ -26,26 +27,26 @@ from datetime import datetime
 #
 # Story Elements
 #
-theme = ["Religion", "Politics", "Sexuality"]
-
 settingTime = ["Past", "Present", "Future"]
 
-settingPlace =  ["Mountains", "Space", "Sky", "City", "Town", "Room", "Plains", "River", "Lake", "Park", "Ocean", "House", "Vehicle", "Plane", "Swamp", "School", "Office", "Construction Site", "Lab", "Jail", "Train", "Boat", "Cave", "Jungle", "Desert", "Ranch"]
+settingPlace =  ["Mountains", "Space", "Sky", "City", "Town", "Room", "Plains", "River", "Lake", "Park", "Ocean", "House", "Vehicle", "Plane", "Swamp", "School", "Office", "Basement", "Construction Site", "Lab", "Jail", "Train", "Boat", "Cave", "Jungle", "Desert", "Ranch", "Plane", "Bathroom"]
 
-characters = ["One", "Two", "Three"]
+characters = ["One", "Two", "Three", "Many"]
 
 pointOfView = ["First", "Second", "Third"]
 
-genre = ["Horror", "Western", "Romance", "Fantasy", "Adventure", "Science Fiction", "Mystery", "Comedy", "Dystopian", "Utopian", "Surreal", "Magical Realism"]
+genre = ["Horror", "Western", "Romance", "Fantasy", "Adventure", "Science Fiction", "Mystery", "Comedy", "Dystopian", "Utopian", "True Crime", "Magical Realism"]
 
 tense = ["Past Tense", "Present Tense"]
+
+format = ["Short Story", "Flash Fiction", "Novella", "Novel First Chapter", "Novel Middle Chapter", "Novel Last Chapter", "Flash Fiction", "Epopee", "YOUR FORMAT"]
 
 title = str(uuid.uuid4())
 
 #
 # Create
 #
-with open('story/stochastic-fiction-game-outline' + title + '.txt', 'w') as f:
+with open('story/stochastic-fiction-game-' + title + '.txt', 'w') as f:
 	print('Stochastic Fiction Game ' + title, file=f)
 	print('UTC Start Time: ' + str(datetime.utcnow()), file=f)
 	print('Game Rules:', file=f)
@@ -58,15 +59,19 @@ with open('story/stochastic-fiction-game-outline' + title + '.txt', 'w') as f:
 	print('\t\t>3. Write the story.', file=f)
 	print('\t\t>4. Editing may help it be a story.', file=f)
 	print('Story Elements:', file=f)
-#       Remove to try to understand what I mean by theme.
-#	print('\tTheme: ' + numpy.random.choice(theme), file=f)
 	print('\tSetting Time: ' + numpy.random.choice(settingTime), file=f)
 	print('\tSetting Place: ' + numpy.random.choice(settingPlace), file=f)
 	print('\tCharacters: ' + numpy.random.choice(characters), file=f)
 	print('\tPoint of View: ' + numpy.random.choice(pointOfView), file=f)
 	print('\tTense: ' + numpy.random.choice(tense), file=f)
 	print('\tGenre: ' + numpy.random.choice(genre), file=f)
+	print('\tFormat: '  + numpy.random.choice(format), file=f)
 	print('########## Story ##########', file=f)
+	print('', file=f)
+	print('', file=f)
+	print('', file=f)
+	print('###########################', file=f)
+	print('########## Contributing Thought ##########', file=f)
 	print('', file=f)
 	print('', file=f)
 	print('', file=f)
