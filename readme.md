@@ -1,4 +1,4 @@
-## Stocastic Fiction Game
+## Stochastic Fiction Game
 
 A story writing game.
 
